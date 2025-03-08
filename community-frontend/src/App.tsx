@@ -1,10 +1,12 @@
 // import Header from './components/sections/header/Header'
-import Hero from './components/sections/Hero/Hero'
+import { Home } from "./pages"
+
+
 
 function App() {
   return (
     <>
-      <Hero />
+    <Home />
     </>
   )
 }

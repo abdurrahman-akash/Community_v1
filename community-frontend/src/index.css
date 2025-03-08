@@ -122,3 +122,28 @@
     @apply bg-background text-foreground;
   }
 }
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px); /* Moves the wave up */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave {
+  animation: wave 4s ease-in-out infinite; /* Smooth up and down motion */
+}
+
+.wave1 {
+  animation-duration: 6s;
+}
+
+.wave2 {
+  animation-duration: 8s;
+  animation-delay: -2s; /* Delay for a natural effect */
+}
+
