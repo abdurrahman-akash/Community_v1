@@ -1,0 +1,28 @@
+/* ...existing styles... */
+
+/* Wave animations */
+.wave {
+  animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave1 {
+  animation-duration: 7s;
+}
+
+.wave2 {
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}

@@ -1,0 +1,16 @@
+/* .wave1 {
+  animation: move-wave 10s linear infinite;
+}
+
+.wave2 {
+  animation: move-wave 15s linear infinite;
+}
+
+@keyframes move-wave {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+} */
