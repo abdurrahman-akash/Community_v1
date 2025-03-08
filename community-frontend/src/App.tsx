@@ -1,4 +1,4 @@
-import Header from './components/sections/header/Header'
+// import Header from './components/sections/header/Header'
 import Hero from './components/sections/Hero/Hero'
 
 function App() {
