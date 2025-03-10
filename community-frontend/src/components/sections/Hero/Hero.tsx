@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Button } from "../../ui/button";
 import Header from "../header/Header";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import styles from "./Hero.module.css";
-import ParticlesBackground from "./ParticlesBackground";
+// import styles from "./Hero.module.css";
+// import ParticlesBackground from "./ParticlesBackground";
 
 function Hero() {
   const [text] = useTypewriter({
