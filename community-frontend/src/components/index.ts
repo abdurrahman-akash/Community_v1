@@ -1,7 +1,4 @@
-import Hero from './sections/Hero/Hero';
-import Footer from './sections/footer/Footer';
+import Footer from "./sections/footer/Footer";
+import Hero from "./sections/hero/Hero";
 
-export {
-    Hero,
-    Footer
-}
+export { Footer, Hero };
