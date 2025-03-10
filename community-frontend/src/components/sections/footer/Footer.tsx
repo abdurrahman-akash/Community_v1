@@ -1,58 +1,84 @@
-'use client'
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+"use client";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <footer className="relative bg-gray-900 text-gray-300 py-12 z-10">
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-gray-900 opacity-50"></div>
-
-      <div className="relative container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className=" bg-black text-gray-300 p-12    ">
+      <div className="flex justify-between pb-8 border-b border-gray-700 ">
+        <div>
+          <h1 className="text-2xl font-bold">MyLogo</h1>
+        </div>
+        <div>
+          <span className="me-5  font-extrabold ">Ready to get started?</span>
+          <button className="bg-violet-500 text-white px-6 py-2 rounded-lg">
+            Get Started
+          </button>
+        </div>
+      </div>
+      {/* <hr className="" /> */}
+      <div className="flex justify-between mt-8">
+        <div className="flex flex-col space-y-4">
+          <h2 className="font-bold  text-2xl">Subscribe to our newsletter</h2>
           <div>
-            <h3 className="text-3xl font-extrabold text-white">Tech Community BD</h3>
-            <p className="mt-4 text-gray-400 leading-relaxed">
-              Empowering developers, designers, and tech enthusiasts all over Bangladesh. 
-              Connect, learn, and grow with us.
-            </p>
+            <input
+              type="email"
+              placeholder="Email address"
+              className="p-3 border-0  outline-none  border-gray-700 border-b focus:border-violet-600"
+            />
+            <button className="rounded-t-lg bg-purple-600 px-4 py-3 hover:bg-purple-700">
+              <FaChevronRight />
+            </button>
           </div>
-
-          <div>
-            <h3 className="text-xl font-bold text-white">Quick Links</h3>
-            <ul className="mt-4 space-y-2">
-              <li><a href="#" className="hover:text-blue-400 transition">Home</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition">Contact</a></li>
-              <li><a href="#" className="hover:text-blue-400 transition">Events</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-bold text-white">Follow Us</h3>
-            <div className="mt-4 flex gap-4">
-              {[
-                { icon: <FaFacebookF />, color: "hover:bg-blue-600" },
-                { icon: <FaTwitter />, color: "hover:bg-blue-400" },
-                { icon: <FaInstagram />, color: "hover:bg-pink-500" },
-                { icon: <FaLinkedin />, color: "hover:bg-blue-700" },
-              ].map((item, index) => (
-                <motion.a
-                  key={index}
-                  href="#"
-                  className={`p-3 rounded-full bg-white/10 transition ${item.color}`}
-                  whileHover={{ scale: 1.2, y: -5 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  {item.icon}
-                </motion.a>
-              ))}
+        </div>
+        <div className="flex  space-x-4 px-10">
+          <div className="flex flex-col space-y-3">
+            <h1 className="text-violet-600 text-xl font-bold">Help</h1>
+            <div className="flex flex-col space-y-1 ">
+              <a
+                href="#"
+                className="text-white hover:text-violet-600 transition-transform duration-200"
+              >
+                FAQs
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-violet-600 transition-transform duration-200"
+              >
+                Contact Us
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-violet-600 transition-transform duration-200"
+              >
+                Support
+              </a>
             </div>
           </div>
         </div>
-
-        <div className="mt-12 text-center border-t border-gray-700 pt-6 text-gray-500 text-sm">
-          © {new Date().getFullYear()} Tech Community BD. All Rights Reserved.
+      </div>
+      <div className="flex justify-between mt-8">
+        <div className="flex space-x-4">
+          <a href="#" className="">Terms & Conditions</a>
+          <a href="#" className="">Privacy Policy</a>
         </div>
+        <div className="flex items-center space-x-4">
+          <a href="#" className="rounded-full p-2 hover:scale-105 duration-200 hover:bg-violet-500"><FaFacebookF className="text-2xl" /></a>
+          <a href="#" className="rounded-full p-2 hover:scale-105 duration-200 hover:bg-violet-500"><FaTwitter className="text-2xl" /></a>
+          <a href="#" className="rounded-full p-2 hover:scale-105 duration-200 hover:bg-violet-500"><FaInstagram className="text-2xl" /></a>
+          <a href="#" className="rounded-full p-2 hover:scale-105 duration-200 hover:bg-violet-500"><FaLinkedin className="text-2xl" /></a>
+        </div>
+        
+      </div>
+      <div className="mt-12 text-center border-t border-gray-700 pt-6 text-gray-500 text-sm">
+        © {new Date().getFullYear()} Tech Community BD. All Rights Reserved.
       </div>
     </footer>
   );
