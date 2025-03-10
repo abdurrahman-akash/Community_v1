@@ -16,7 +16,7 @@ function Hero() {
 
   return (
     <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white overflow-hidden">
-      {/* <ParticlesBackground /> */}
+
       <Header />
 
       <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
