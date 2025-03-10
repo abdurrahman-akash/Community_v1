@@ -1,4 +1,3 @@
-
 'use client'
 import { FaHome } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
@@ -26,9 +25,9 @@ function Header() {
     },
   ];
   return (
-    <header className=" absolute top-0 left-0 right-0 z-50 ">
-      <div className="container mx-auto md:mt-3 p-4 rounded-lg  ">
-        <nav className="flex justify-between items-center p-4  bg-white/20 inset-0  backdrop-blur-md shadow-md rounded-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 ">
+      <div className="container mx-auto   rounded-b-lg ">
+        <nav className="flex justify-between items-center p-4  bg-white/20 inset-0  backdrop-blur-md shadow-md rounded-b-lg ">
           <div>
             <h1 className="text-2xl font-bold">MyLogo</h1>
           </div>

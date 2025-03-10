@@ -20,10 +20,23 @@ function Hero() {
       <Header />
 
       <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-30 right-20 w-72 h-72 bg-white/30 rounded-full blur-3xl"></div>
 
       <div className="absolute inset-0 bg-black/50 backdrop-blur-md"></div>
-
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg"
+          alt="hero"
+          className="w-1/2 opacity-10 rounded-full absolute  h-full object-cover object-center"
+        />
+      </div>
+      <div className="absolute bottom-30 right-20   w-64 h-64 bg-gradient-to-r ">
+        <img
+          src={'https://cdn.pixabay.com/photo/2017/02/25/23/52/connections-2099068_960_720.png'}
+          alt="hero"
+          className="w-full   h-full object-cover object-center"
+        />
+      </div>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
