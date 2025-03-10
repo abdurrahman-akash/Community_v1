@@ -1,5 +1,4 @@
-
-import { Footer, Hero } from '../../components'
+import { Footer,Hero } from "@/components"
 
 function Home() {
   return (

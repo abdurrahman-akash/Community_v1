@@ -1,9 +1,9 @@
+'use client'
+
 import { motion } from "framer-motion";
-import { Button } from "../../ui/button";
+import { Button } from "@/components/ui/button";
 import Header from "../header/Header";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import styles from "./Hero.module.css";
-import ParticlesBackground from "./ParticlesBackground";
 
 function Hero() {
   const [text] = useTypewriter({
@@ -50,25 +50,24 @@ function Hero() {
           >
             About Us
           </Button>
+
         </div>
       </motion.div>
 
-      {/* <div className="absolute top-bottom left-0 right-0 z-10">
-        <svg className="w-full h-auto">
+      {/* <div className="absolute bottom-0 left-0 right-0 z-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="w-full -mb-1"
+        >
           <path
-            className={`wave ${styles.wave1}`}
-            fill="#ffffff"
-            fillOpacity="0.4"
-            d="M0,224L60,218.7C120,213,240,203,360,213.3C480,224,600,256,720,256C840,256,960,224,1080,186.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-          <path
-            className={`wave ${styles.wave2}`}
-            fill="#ffffff"
-            fillOpacity="0.2"
-            d="M0,256L60,240C120,224,240,192,360,176C480,160,600,160,720,176C840,192,960,224,1080,234.7C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            fill="#000000"
+            fillOpacity="1"
+            d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,144C672,139,768,181,864,192C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
         </svg>
       </div> */}
+
     </section>
   );
 }

@@ -1,5 +1,7 @@
+
+'use client'
 import { FaHome } from "react-icons/fa";
-import { Button } from "../../ui/button";
+import { Button } from "@/components/ui/button";
 
 import { useState } from "react";
 import MenuModal from "./MenuModal";
@@ -49,6 +51,7 @@ function Header() {
               <Button variant="default" size="sm" className="cursor-pointer  ">
                 Get Started
               </Button>
+              
             </div>
           </div>
           <div className="md:hidden">
