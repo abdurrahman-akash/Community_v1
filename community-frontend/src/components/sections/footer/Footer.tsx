@@ -4,10 +4,8 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedin,
-  FaChevronLeft,
   FaChevronRight,
 } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function Footer() {
   return (

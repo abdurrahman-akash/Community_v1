@@ -1,9 +1,13 @@
-'use client'
+"use client";
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Header from "../header/Header";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Image from "next/image";
+import DeveloperImage from "@/assets/images/hero/software-developer-6521720_960_720.jpg";
+
+import ConnectionImage from "@/assets/images/hero/connections-2099068_960_720.webp"
 
 function Hero() {
   const [text] = useTypewriter({
@@ -16,26 +20,30 @@ function Hero() {
 
   return (
     <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white overflow-hidden">
-
       <Header />
 
       <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-30 right-20 w-72 h-72 bg-white/30 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-30 right-20 w-72 h-72 bg-gray-500/60 rounded-full blur-3xl"></div>
 
       <div className="absolute inset-0 bg-black/50 backdrop-blur-md"></div>
       <div>
-        <img
-          src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg"
-          alt="hero"
+        <Image
+          src={DeveloperImage}
+         
           className="w-1/2 opacity-10 rounded-full absolute  h-full object-cover object-center"
+          alt={"Hero image"}
         />
+
       </div>
       <div className="absolute bottom-30 right-20   w-64 h-64 bg-gradient-to-r ">
-        <img
-          src={'https://cdn.pixabay.com/photo/2017/02/25/23/52/connections-2099068_960_720.png'}
-          alt="hero"
-          className="w-full   h-full object-cover object-center"
+
+        <Image
+          src={ConnectionImage}
+
+          className="w-full opacity-50  absolute h-full object-cover object-center"
+          alt="Hero image"
         />
+       
       </div>
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -63,7 +71,6 @@ function Hero() {
           >
             About Us
           </Button>
-
         </div>
       </motion.div>
 
@@ -80,7 +87,6 @@ function Hero() {
           ></path>
         </svg>
       </div> */}
-
     </section>
   );
 }

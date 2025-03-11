@@ -10,7 +10,7 @@ async function AboutusSection() {
       <div className="absolute bottom-40 right-10 w-72 h-72 bg-white/20 rounded-full blur-3xl"></div>
       <div className="relative z-10 container mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight bg-gradient-to-r from-blue-400 via-pink-500 to-purple-600 bg-clip-text text-transparent drop-shadow-md">
-          What's in it for you?
+          What&apos;s in it for you?
         </h1>
         <p className="mt-6 text-lg md:text-2xl max-w-3xl mx-auto text-gray-200">
           Join our community to learn new skills, connect with like-minded
